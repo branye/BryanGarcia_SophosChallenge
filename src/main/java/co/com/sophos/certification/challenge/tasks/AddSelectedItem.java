@@ -4,7 +4,8 @@ import static co.com.sophos.certification.challenge.userinterfaces.PlazaveaShopp
 import static co.com.sophos.certification.challenge.userinterfaces.PlazaveaShoppingPage.LOOK_FOR_PRODUCT_DETAILS;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-import java.util.concurrent.TimeUnit;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -15,7 +16,19 @@ public class AddSelectedItem implements Task{
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Click.on(LOOK_FOR_PRODUCT_DETAILS));
-		ADD_PRODUCT_TO_CART_BUTTON.resolveFor(actor).waitUntilClickable().withTimeoutOf(10, TimeUnit.SECONDS);
+		try {
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_MINUS);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyRelease(KeyEvent.VK_MINUS);
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_MINUS);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyRelease(KeyEvent.VK_MINUS);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		actor.attemptsTo(Click.on(ADD_PRODUCT_TO_CART_BUTTON));
 	}
 	

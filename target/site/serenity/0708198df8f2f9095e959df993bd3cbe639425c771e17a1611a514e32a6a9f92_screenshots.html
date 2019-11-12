@@ -87,7 +87,7 @@
             <span class="breadcrumbs">
                 <a href="index.html">Home</a>
                 > <span class="truncate-40"><a
-                    href="64227f31cd0e950bb88efead85a419d41f68479deeaf4dcd82ae51f805ed2cc8.html">Buy A Product On Plazavea Web Application, And Verify Its Functionality</a></span>
+                    href="d9912e5b331c2e4898107b76b393d103b3fb99d1a2427cc5f5b575ac29410ca0.html">Buy A Product On Plazavea Web Application, And Verify Its Functionality</a></span>
                 > <span class="truncate-60"><a
                     href="0708198df8f2f9095e959df993bd3cbe639425c771e17a1611a514e32a6a9f92.html">The user as a client of plazavea tries to buy an item on the web page </a></span>
                 > Screenshots
@@ -117,7 +117,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-11-2019 18:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-11-2019 22:58</span>
     <br style="clear:left"/>
 </div>
 
@@ -158,9 +158,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">The user as a client of plazavea tries to buy an item on the web page
+                                <span class="error-color">The user as a client of plazavea tries to buy an item on the web page
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -181,20 +181,78 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+                        <div class="panel-heading title="Element click intercepted exception: The following error occurred: element click intercepted: Element is not clickable at point (1157, 1381)">
+                            Element click intercepted exception: The following error occurred: element click intercepted: Element is not clickable at point (1157, 1381)
+                        </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#stacktraceModal-overall">
+                        View details
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    org.openqa.selenium.ElementClickInterceptedException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>
+                                        <pre>The following error occurred: element click intercepted: Element is not clickable at point (1157, 1381)<br>  (Session info: chrome=78.0.3904.87)<br>Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'<br>System info: host: 'DESKTOP-GACOO7O', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\brany\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br>Session ID: b2190360e897114a2d051d4a4dab0bad</pre>
+                                    </h5>
+                                    co.com.sophos.certification.challenge.tasks.AddSelectedItem.performAs(AddSelectedItem.java
+                                    :30) <br>
+                                    co.com.sophos.certification.challenge.stepdefinitions.AddNewItemToShoppingCartStepDefinition.heSelectsAnItemToAddInTheShoppingCart(AddNewItemToShoppingCartStepDefinition.java
+                                    :38) <br>
+                                    cucumber.runner.Runner.runPickle(Runner.java
+                                    :80) <br>
+                                    co.com.sophos.certification.challenge.runners.CustomRunner.run(CustomRunner.java
+                                    :53) <br>
+                                    org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
+                                    :89) <br>
+                                    org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
+                                    :41) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
+                                    :541) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
+                                    :763) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
+                                    :463) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
+                                    :209) <br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource4523934753725557019.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="8eaf726dfb0b03ab131e738bf4b56f10d524d0eb1f4b1b0b0057e43bde7ca3db.png" title="The user as a client of plazavea tries to buy an item on the web page #1: {id=1, category=Tecnolog&iacute;a, productName=Smartphone XIAOMI Redmi 7 6.26&quot; 32GB 12MP + 2MP Negro, quantity=QUANT, price=799.00, expectedResponse=El producto se agrego al carrito}" width="2400"/>
-                <img src="c5411ae547176b63cb841f2b5dfcb17e1de3b5150d37173e8768c8eb5723ec4a.png" title="Given User searchs the product he wants to buy on plazavea web page
-| 1 | Tecnolog&iacute;a | Smartphone XIAOMI Redmi 7 6.26&quot; 32GB 12MP + 2MP Negro | QUANT | 799.00 | El producto se agrego al carrito |" width="2400"/>
-                <img src="72dbbb8a80790fb01e0487f6244bcca774252dfb0d0dfb9066488e1d040fd9d4.png" title="Sophos solution clicks on The search bar at tyhe top of the page" width="2400"/>
-                <img src="3ce23e8122f94bd30afdc136e53c05d5a0e27f120a9075d5d4ec84177c3b7e08.png" title="Sophos solution enters 'Smartphone XIAOMI Redmi 7 6.26&quot; 32GB 12MP + 2MP Negro' into The search bar at tyhe top of the page" width="2400"/>
-                <img src="278998aa543594f4ef9a2ac1a235e384b8b03a62556691c601143a6482d934c2.png" title="When he selects an item to add in the shopping cart" width="2400"/>
-                <img src="8356e6acd6da4a51a0e0bf4af30350a3c2033e7040c7ad1e9570c232d1c6967a.png" title="Sophos solution clicks on label that redirects to product details" width="2400"/>
-                <img src="278998aa543594f4ef9a2ac1a235e384b8b03a62556691c601143a6482d934c2.png" title="Sophos solution clicks on button that add the product to shopping cart" width="2400"/>
-                <img src="8eaf726dfb0b03ab131e738bf4b56f10d524d0eb1f4b1b0b0057e43bde7ca3db.png" title="Then he verifies that the item selected was added to the shopping cart successful" width="2400"/>
-                <img src="8eaf726dfb0b03ab131e738bf4b56f10d524d0eb1f4b1b0b0057e43bde7ca3db.png" title="Then the selected product" width="2400"/>
-                <img src="5ef22e5022914c268324826913f910cd10c7ae4bf5d842897b3c41a2dba0b3d3.png" title="Sophos solution clicks on alert that appears when the product is added to shopping cart" width="2400"/>
-                <img src="8eaf726dfb0b03ab131e738bf4b56f10d524d0eb1f4b1b0b0057e43bde7ca3db.png" title="Sophos solution clicks on Continue to view the product details: <span class='success-color'>SUCCESS</span>" width="2400"/>
+                <img src="28f0aca63fd21af644160d5ca662b3f2aa0d709378fab54ec2641f5c24718e4f.png" title="Given User searchs the product he wants to buy on plazavea web page
+| 1 | Tecnolog&iacute;a | Smartphone XIAOMI Redmi 7 6.26&quot; 32GB 12MP + 2MP Negro | QUANT | 799.00 | El producto se agrego al carrito |" width="1034"/>
+                <img src="fdbe7ad58ce3ad8a371fefcbfa919917a6255cd78ec603c6c243c5624a9f4609.png" title="Sophos solution clicks on The search bar at tyhe top of the page" width="1034"/>
+                <img src="1b6523d3f90e32131caf181d7760e7a0f1e92550df8aac90a2a55a96a6ade9ce.png" title="Sophos solution enters 'Smartphone XIAOMI Redmi 7 6.26&quot; 32GB 12MP + 2MP Negro' into The search bar at tyhe top of the page" width="1034"/>
+                <img src="e286d5fbcbc1b74257e86954ef7ea82191b512da9d4a76f6a913dc41601ea6b2.png" title="Sophos solution clicks on label that redirects to product details" width="1034"/>
+                <img src="8e1a739f07064f296d9d2f2af6e5adb2ca233a62e7bf810f58737d7dca079373.png" title="Sophos solution clicks on promo image cancel: <span class='error-color'>ERROR</span>" width="1034"/>
             </div>
         </div>
 

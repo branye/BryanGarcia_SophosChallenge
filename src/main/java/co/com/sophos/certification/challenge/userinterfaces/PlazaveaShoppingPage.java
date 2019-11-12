@@ -17,7 +17,7 @@ public class PlazaveaShoppingPage extends PageObject{
 			.located(By.xpath("//*[@class='button istertiary']"));
 	public static final Target GO_CHECK_CART_ITEMS = Target.the("alert that appears when the product is added to shopping cart")
 			.located(By.xpath("//section[@class='Header__top__cart']"));
-	public static final Target CART_LOADED_TEMPLATE = Target.the("Label that contains the product name")
+	public static final Target CART_LOADED_TEMPLATE = Target.the("card with product description")
 			.located(By.id("cartLoadedDiv"));
 	public static final Target PRODUCT_NAME_LABEL = Target.the("Label that contains the product name")
 			.located(By.id("product-name51506"));
